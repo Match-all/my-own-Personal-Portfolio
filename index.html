@@ -423,16 +423,17 @@
     </footer>
     <!--!: End of <footer class="footer"> element -->
 
-    <!-- !Start of <script> element -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const dateElement = document.getElementById('dateInfo');
-        const currentDate = new Date();
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        const formattedDate = currentDate.toLocaleDateString(undefined, options);
-        dateElement.innerHTML = &copy; ${currentDate.getFullYear()} Tamirat Teferi. Today is ${formattedDate}.;
-      });
-    </script>
-    <!--! End of <script> element -->
+ <!-- Start of script section -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dateElement = document.getElementById('dateInfo');
+    const currentDate = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString(undefined, options);
+    dateElement.innerHTML = `&copy; ${currentDate.getFullYear()} Tamirat Teferi. Today is ${formattedDate}.`;
+  });
+</script>
+<!-- End of script section -->
+
   </body>
 </html>
