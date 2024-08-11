@@ -313,4 +313,118 @@ span {
 /* End of section home styles */
 
 
+/* Start of .education section */
+.education {
+  padding: 100px 15px;
+  background: var(--second-bg-color);
+  color: var(--text-color);
+}
 
+.education .heading {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--main-color);
+}
+
+/* Start of .timeline-items */
+.timeline-items {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  left: calc(50% - 2.5px);
+  top: 0;
+}
+/* End of .timeline-items */
+
+/* Start of .timeline-item */
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+/* End of .timeline-item */
+
+/* Start of .timeline-dot */
+.timeline-dot {
+  height: 20px;
+  width: 20px;
+  background: var(--main-color);
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: 0;
+  box-shadow: 0 0 10px var(--main-color);
+}
+/* End of .timeline-dot */
+
+/* Start of .timeline-date */
+.timeline-date {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 1rem 0;
+}
+/* End of .timeline-date */
+
+/* Start of .timeline-content */
+.timeline-content {
+  background-color: var(--bg-color);
+  border: 3px solid var(--main-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+.timeline-content h3 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.timeline-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.timeline-content li {
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content strong {
+  color: var(--main-color);
+}
+/* End of .timeline-content */
