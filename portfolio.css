@@ -490,6 +490,66 @@ span {
 /* End of .services-container */
 
 
+/* Projects Section */
+.projects {
+  padding: 50px 0;
+  background-color: rgb(1, 1, 51);
+  text-align: center;
+}
+
+.projects .heading {
+  font-size: 8rem; /* Adjust font size to match the inline style */
+  color: #024eff; /* Color from inline style */
+  margin-bottom: 5rem;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  background-color: rgba(4, 4, 45, 0.7); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  max-width: 300px;
+  text-align: left;
+  transition: all 0.3s ease; 
+  backdrop-filter: blur(10px); 
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: blueviolet;
+}
+
+.project p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.project:hover {
+  background-color: rgba(4, 4, 45, 0.9); 
+  box-shadow: 0 8px 16px #024eff; 
+  transform: scale(1.05); 
+}
+
+.project:hover img {
+  transform: scale(1.1); 
+}
+
 /* Testimonials Section */
 .testimonials {
   background: rgba(46, 44, 99, 0.538);
@@ -563,3 +623,67 @@ span {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
 }
+/* ends */
+
+
+
+/* Strat project*/
+.projects {
+  padding: 50px 0;
+  background-color: rgb(1, 1, 51);
+  text-align: center;
+}
+
+.projects .heading {
+  font-size: 8rem; /* Adjust font size to match the inline style */
+  color: #024eff; /* Color from inline style */
+  margin-bottom: 5rem;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  background-color: rgba(4, 4, 45, 0.7); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  max-width: 300px;
+  text-align: left;
+  transition: all 0.3s ease; 
+  backdrop-filter: blur(10px); 
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: blueviolet;
+}
+
+.project p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.project:hover {
+  background-color: rgba(4, 4, 45, 0.9); 
+  box-shadow: 0 8px 16px #024eff; 
+  transform: scale(1.05); 
+}
+
+.project:hover img {
+  transform: scale(1.1); 
+}
+/* ends project */
