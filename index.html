@@ -5,26 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link
-      rel="shortcut icon"
-      href="./Images/My-profile-picture.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link rel="shortcut icon" href="./Images/My-profile-picture.png" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./portfolio.css" />
     <!--!: End of <head> element -->
   </head>
 
   <body>
-    <!--!: Start of <div class="header"> element -->
-    <div class="header">
+
+       <!--!: Start of <div class="header"> element -->
+    <header  class="header">
       <a href="#home" class="logo">Tamirat <span>Teferi</span></a>
       <i class="bx bx-menu" id="menu-icon"></i>
       <div class="navbar">
@@ -34,9 +25,9 @@
         <a href="#testimonials">Testimonials</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-      </div>
-    </div>
-    <!--!: End of <div class="header"> element -->
+    </header>
+       <!--!: End of <div class="header"> element -->
+  
 
     <!--!: Start of <section class="home" id="home"> element -->
     <section class="home" id="home">
@@ -75,12 +66,6 @@
       </div>
     </section>
     <!--!: End of <section class="home" id="home"> element -->
-
-
-
-
-
-
 
     <!--! Start of <section class="education" id="education"> element -->
     <section class="education" id="education">
@@ -194,12 +179,6 @@
       </div>
     </section>
     <!-- !End of <section class="education" id="education"> element -->
-
-
-
-
-
-
 
     <!--!: Start of <section class="services" id="services"> element -->
     <section class="services" id="services">
@@ -315,10 +294,6 @@
     </section>
     <!--!: End of <section class="testimonials" id="testimonials"> element -->
 
-
-
-
-
     <!--!: Start of <section class="projects" id="projects"> element -->
     <section class="projects" id="projects">
       <h2 style="color: #024eff; font-size: 80px" class="heading">Projects</h2>
@@ -360,9 +335,6 @@
       </div>
     </section>
     <!--! End of <section class="projects" id="projects"> element -->
-
-
-      
 
     <!--! Start of <section class="contact" id="contact"> element -->
     <section class="contact" id="contact">
@@ -423,17 +395,24 @@
     </footer>
     <!--!: End of <footer class="footer"> element -->
 
- <!-- Start of script section -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const dateElement = document.getElementById('dateInfo');
-    const currentDate = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const formattedDate = currentDate.toLocaleDateString(undefined, options);
-    dateElement.innerHTML = `&copy; ${currentDate.getFullYear()} Tamirat Teferi. Today is ${formattedDate}.`;
-  });
-</script>
-<!-- End of script section -->
-
+    <!-- Start of script section -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dateElement = document.getElementById("dateInfo");
+        const currentDate = new Date();
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        const formattedDate = currentDate.toLocaleDateString(
+          undefined,
+          options
+        );
+        dateElement.innerHTML = `&copy; ${currentDate.getFullYear()} Tamirat Teferi. Today is ${formattedDate}.`;
+      });
+    </script>
+    <!-- End of script section -->
   </body>
 </html>

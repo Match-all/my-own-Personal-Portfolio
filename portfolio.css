@@ -8,7 +8,7 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  color: #88d674;
+  /* background: rgba(0, 0, 0, 0.7); */
 }
 
 /* Root variables */
@@ -32,26 +32,26 @@ body {
   color: var(--text-color);
 }
 
-/* Header styles */
+/*! Header styles */
 .header {
   /* Start of .header styles */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 5%;
+  padding: 4rem 12% 4rem;
   background: var(--tranfarent-bg-blur-color);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-  /* End of .header styles */
+  /*End of .header styles */
 }
 
 .logo {
   /* Start of .logo styles */
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--text-color);
   font-weight: 800;
   cursor: pointer;
@@ -67,18 +67,11 @@ body {
   text-shadow: 0 2px 10px var(--main-color);
 }
 
-.navbar {
-  /* Start of .navbar styles */
-  display: flex;
-  align-items: center;
-  /* End of .navbar styles */
-}
-
 .navbar a {
   /* Start of .navbar a styles */
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--text-color);
-  margin-left: 2rem;
+  margin-left: 4rem;
   font-weight: 500;
   transition: 0.3s ease;
   border-bottom: 3px solid transparent;
@@ -102,14 +95,14 @@ body {
 
 #menu-icon {
   /* Start of #menu-icon styles */
-  font-size: 3rem;
+  font-size: 3.6rem;
   color: var(--main-color);
-  display: none; /* Assuming you will show this for responsive design */
+  display: none;/* Assuming you will show this for responsive design */
   /* End of #menu-icon styles */
 }
 
 
-/* Start of section home styles */
+/*! Start of section home styles */
 section {
   min-height: 100vh;
   padding: 10rem;
@@ -235,6 +228,11 @@ span {
   /* End of .btn styles */
 }
 
+#me {
+  color: white;
+}
+
+
 .btn:hover {
   /* Start of .btn:hover styles */
   transform: scale(1.05);
@@ -291,7 +289,7 @@ span {
 
 .text-animation span::before {
   /* Start of .text-animation span::before styles */
-  content: "Software and Web Developer/ ";
+  content: "Software and Web Developer/ .. ";
   color: rgb(255, 0, 255);
   animation: words 20s infinite;
   /* End of .text-animation span::before styles */
@@ -310,15 +308,72 @@ span {
   /* End of .text-animation span::after styles */
 }
 
-/* End of section home styles */
+/* Start of keyframes for cursor, words, and typing animations */
+@keyframes cursor {
+  to {
+    border-left: 2px solid var(--main-color);
+  }
+}
+
+@keyframes words {
+  0%, 20% {
+    content: "Front-end Design ..";
+  }
+
+  21%, 40% {
+    content: "Web Design ..";
+  }
+
+  41%, 60% {
+    content: "UX / UI Design ..";
+  }
+
+  61%, 80% {
+    content: "Web Developer ..";
+  }
+
+  81%, 100% {
+    content: "Software Tester ..";
+  }
+}
+
+@keyframes typing {
+  0%, 30%, 50%, 70%, 90% {
+    width: 0;
+  }
+
+  15%, 35%, 55%, 75%, 95% {
+    width: 100%;
+  }
+}
+/* End of keyframes for cursor, words, and typing animations */
+
+/*!: End of section home styles */
 
 
-/* Start of .education section */
-.education {
+
+/* !: Start of .education section */
+.heading {
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+/* .education{
   padding: 100px 15px;
   background: var(--second-bg-color);
+} */
+
+.education {
+  padding: 100px 15px;
+  background: rgba(1, 24, 60, 0.452);
   color: var(--text-color);
 }
+
+.education h2 {
+  margin-bottom: 5rem;
+}
+
 
 .education .heading {
   font-size: 4rem;
@@ -327,12 +382,13 @@ span {
   color: var(--main-color);
 }
 
-/* Start of .timeline-items */
+/* !Start of .timeline-items */
 .timeline-items {
   max-width: 1200px;
   margin: auto;
-  position: relative;
   padding: 0 20px;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .timeline-items::before {
@@ -344,9 +400,11 @@ span {
   left: calc(50% - 2.5px);
   top: 0;
 }
-/* End of .timeline-items */
+/* !:End of .timeline-items */
 
-/* Start of .timeline-item */
+
+
+/* !: Start of .timeline-item */
 .timeline-item {
   position: relative;
   width: 100%;
@@ -365,27 +423,31 @@ span {
 .timeline-item:nth-child(even) {
   padding-left: calc(50% + 30px);
 }
-/* End of .timeline-item */
+/* !:End of .timeline-item */
+
 
 /* Start of .timeline-dot */
 .timeline-dot {
   height: 20px;
   width: 20px;
   background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color);
   border-radius: 50%;
   position: absolute;
   left: calc(50% - 10px);
-  top: 0;
-  box-shadow: 0 0 10px var(--main-color);
+  top: 10;
 }
 /* End of .timeline-dot */
 
+
+
 /* Start of .timeline-date */
 .timeline-date {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   color: var(--text-color);
-  margin: 1rem 0;
+  margin: 6px 0 15px;
 }
 /* End of .timeline-date */
 
@@ -407,12 +469,14 @@ span {
   font-size: 2rem;
   color: var(--main-color);
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .timeline-content p {
   font-size: 1.6rem;
   color: var(--text-color);
   line-height: 1.5;
+  font-weight: 300;
 }
 
 .timeline-content ul {
@@ -433,7 +497,7 @@ span {
 /* Start of .services section */
 .services {
   padding: 100px 15px;
-  background: var(--second-bg-color);
+  background: rgba(21, 26, 32, 0.634);
   color: var(--text-color);
 }
 
@@ -840,46 +904,333 @@ textarea {
 }
 /* End of Webkit scrollbar styles */
 
+/*!:- ================== Media Queries ================= */
 
+/* Medium screens (1285px and below) */
+@media (max-width: 1285px) {
+  html {
+    font-size: 55%;
+  }
 
-/* Start of keyframes for cursor, words, and typing animations */
-@keyframes cursor {
-  to {
+  .services-container {
+    padding: 7rem;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 0 5rem;
+  }
+
+  .home {
+    padding: 6rem 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.3rem;
+  }
+
+  .btn-group .btn {
+    font-size: 1.3rem;
+  }
+
+  .home-image img {
+    max-width: 70vw;
+  }
+}
+
+/* Tablet and smaller screens (991px and below) */
+@media (max-width: 991px) {
+  header {
+    padding: 2rem 3%;
+  }
+
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .timeline-items::before {
+    left: 7px;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+
+  .timeline-dot {
+    left: 0;
+  }
+
+  .services {
+    padding-bottom: 7rem;
+  }
+
+  .testimonials .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact form {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+/* Small screens (895px and below) */
+@media (max-width: 895px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-top-left-radius: 2rem;
     border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+
+  .navbar .active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: white;
+  }
+
+  .home {
+    padding: 5rem 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .home-content p {
+    font-size: 1.2rem;
+  }
+
+  .btn-group .btn {
+    font-size: 1.2rem;
+  }
+
+  .home-image img {
+    max-width: 75vw;
+  }
+
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    padding: 5rem 2%;
+  }
+
+  .services .heading {
+    font-size: 2.2rem;
+  }
+
+  .service-box {
+    padding: 1.5rem;
+  }
+
+  .service-box i {
+    font-size: 2.5rem;
+  }
+
+  .service-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .service-info p {
+    font-size: 1.3rem;
   }
 }
 
-@keyframes words {
-  0%, 20% {
-    content: "Front-end Design ..";
+/* Large Smartphones (576px - 767px) */
+@media (max-width: 767px) {
+  .home {
+    padding: 5rem 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
-  21%, 40% {
-    content: "Web Design ..";
+  .home-content h1 {
+    font-size: 3.5rem;
   }
 
-  41%, 60% {
-    content: "UX / UI Design ..";
+  .home-content h3 {
+    font-size: 1.8rem;
   }
 
-  61%, 80% {
-    content: "Web Developer ..";
+  .home-content p {
+    font-size: 1.2rem;
   }
 
-  81%, 100% {
-    content: "Software Tester ..";
-  }
-}
-
-@keyframes typing {
-  0%, 30%, 50%, 70%, 90% {
-    width: 0;
+  .btn-group .btn {
+    font-size: 1.2rem;
   }
 
-  15%, 35%, 55%, 75%, 95% {
-    width: 100%;
+  .home-image img {
+    max-width: 75vw;
   }
 }
 
-/* End of keyframes for cursor, words, and typing animations */
+/* Specific styles for Android device with screen height: 1640px and width: 720px */
+@media (max-width: 720px) and (max-height: 1640px) {
+  .home-content h1 {
+    font-size: 3rem; /* Adjust font size */
+  }
 
+  .home-content h3 {
+    font-size: 1.8rem; /* Adjust subheading font size */
+  }
+
+  .home-content p {
+    font-size: 1.2rem; /* Adjust paragraph font size */
+  }
+
+  .btn-group .btn {
+    font-size: 1.2rem; /* Adjust button font size */
+    padding: 0.8rem 1.6rem;
+  }
+
+  .home-image img {
+    max-width: 80vw; /* Adjust image size */
+  }
+
+  /* Additional adjustments for services section */
+  .services-container {
+    padding: 4rem 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .service-box {
+    padding: 1.5rem;
+  }
+
+  .service-box i {
+    font-size: 2.5rem;
+  }
+
+  .service-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .service-info p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small Smartphones (360px - 575px) */
+@media (max-width: 575px) {
+  .home {
+    padding: 4rem 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .home-content p {
+    font-size: 1.1rem;
+  }
+
+  .btn-group .btn {
+    font-size: 1.1rem;
+  }
+
+  .home-image img {
+    max-width: 80vw;
+  }
+}
+
+/* Extra Small Devices (Smartwatches, etc.) (max-width: 359px) */
+@media (max-width: 359px) {
+  .home {
+    padding: 3rem 0.5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .btn-group .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .home-image img {
+    max-width: 85vw;
+  }
+}
+
+/* Large Screens (Desktops, TVs) */
+@media (min-width: 1441px) {
+  .home-content h1 {
+    font-size: 7rem;
+  }
+
+  .home-content h3 {
+    font-size: 4rem;
+  }
+
+  .home-content p {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  .home-image img {
+    max-width: 500px;
+  }
+}
