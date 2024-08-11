@@ -823,3 +823,64 @@ textarea {
   font-size: 1.6rem;
 }
 /* End of .footer section styles */
+
+
+/* Start of Webkit scrollbar styles */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb-track {
+  background-color: var(--bg-color);
+  width: 20px;
+}
+/* End of Webkit scrollbar styles */
+
+
+
+/* Start of keyframes for cursor, words, and typing animations */
+@keyframes cursor {
+  to {
+    border-left: 2px solid var(--main-color);
+  }
+}
+
+@keyframes words {
+  0%, 20% {
+    content: "Front-end Design ..";
+  }
+
+  21%, 40% {
+    content: "Web Design ..";
+  }
+
+  41%, 60% {
+    content: "UX / UI Design ..";
+  }
+
+  61%, 80% {
+    content: "Web Developer ..";
+  }
+
+  81%, 100% {
+    content: "Software Tester ..";
+  }
+}
+
+@keyframes typing {
+  0%, 30%, 50%, 70%, 90% {
+    width: 0;
+  }
+
+  15%, 35%, 55%, 75%, 95% {
+    width: 100%;
+  }
+}
+
+/* End of keyframes for cursor, words, and typing animations */
+
+
