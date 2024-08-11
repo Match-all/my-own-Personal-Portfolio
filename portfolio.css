@@ -107,3 +107,210 @@ body {
   display: none; /* Assuming you will show this for responsive design */
   /* End of #menu-icon styles */
 }
+
+
+/* Start of section home styles */
+section {
+  min-height: 100vh;
+  padding: 10rem;
+}
+.home {
+  /* Start of .home styles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  /* End of .home styles */
+}
+
+.home-content {
+  /* Start of .home-content styles */
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+  margin-top: 3rem;
+  /* End of .home-content styles */
+}
+
+span {
+  /* Start of span styles */
+  color: var(--main-color);
+  /* End of span styles */
+}
+
+.home-content h3 {
+  /* Start of .home-content h3 styles */
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  color: rgba(82, 82, 239, 0.52);
+  /* End of .home-content h3 styles */
+}
+
+.home-content h1 {
+  /* Start of .home-content h1 styles */
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+  /* End of .home-content h1 styles */
+}
+
+.home-image {
+  /* Start of .home-image styles */
+  border-radius: 5%;
+  /* End of .home-image styles */
+}
+
+.home-image img {
+  /* Start of .home-image img styles */
+  position: relative;
+  top: 3rem;
+  width: 32vh;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  /* End of .home-image img styles */
+}
+
+.home-image img:hover {
+  /* Start of .home-image img:hover styles */
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+  /* End of .home-image img:hover styles */
+}
+
+.home-content p {
+  /* Start of .home-content p styles */
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  max-height: 1000px;
+  /* End of .home-content p styles */
+}
+
+.social-icon a {
+  /* Start of .social-icon a styles */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease-in-out;
+  /* End of .social-icon a styles */
+}
+
+.social-icon a:hover {
+  /* Start of .social-icon a:hover styles */
+  color: rgb(255, 0, 255);
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px rgb(27, 12, 165);
+  background-color: var(--main-color);
+  /* End of .social-icon a:hover styles */
+}
+
+.btn {
+  /* Start of .btn styles */
+  display: inline;
+  padding: 1rem 2.8rem;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: black;
+  border: 2px solid transparent;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  /* End of .btn styles */
+}
+
+.btn:hover {
+  /* Start of .btn:hover styles */
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--main-color);
+  transform: scale(1.3) translateY(-5px);
+  background-color: var(--main-color);
+  gap: 2rem;
+  /* End of .btn:hover styles */
+}
+
+.btn-group {
+  /* Start of .btn-group styles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  /* End of .btn-group styles */
+}
+
+.btn-group a:nth-of-type(2),
+.btn-group a:nth-of-type(3),
+.btn-group a:nth-of-type(4) {
+  /* Start of .btn-group a:nth-of-type styles */
+  background-color: black;
+  color: var(--main-color);
+  border-color: var(--main-color);
+  box-shadow: 0 0 25px transparent;
+  /* End of .btn-group a:nth-of-type styles */
+}
+
+.btn-group a:nth-of-type(2):hover,
+.btn-group a:nth-of-type(3):hover,
+.btn-group a:nth-of-type(4):hover {
+  /* Start of .btn-group a:nth-of-type:hover styles */
+  box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--main-color);
+  color: rgb(255, 0, 255);
+  /* End of .btn-group a:nth-of-type:hover styles */
+}
+
+.text-animation {
+  /* Start of .text-animation styles */
+  font: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  /* End of .text-animation styles */
+}
+
+.text-animation span {
+  /* Start of .text-animation span styles */
+  position: relative;
+  /* End of .text-animation span styles */
+}
+
+.text-animation span::before {
+  /* Start of .text-animation span::before styles */
+  content: "Software and Web Developer/ ";
+  color: rgb(255, 0, 255);
+  animation: words 20s infinite;
+  /* End of .text-animation span::before styles */
+}
+
+.text-animation span::after {
+  /* Start of .text-animation span::after styles */
+  content: " ";
+  background-color: var(--bg-color);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--bg-color);
+  right: -8px;
+  animation: cursor 0.6s, infinite typing 20s steps(14);
+  /* End of .text-animation span::after styles */
+}
+
+/* End of section home styles */
+
+
+
