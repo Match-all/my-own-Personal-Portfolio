@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #060214, #040018);
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('./Images/My-profile-picture.png') center/cover no-repeat fixed;
+  filter: brightness(70%);
+  /* Adjust brightness for lighting effect */
+}
+
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: 20px auto;
+  border: 2px solid #0e013c;
+  background: rgba(0, 0, 0, 0.797); /* Semi-transparent black background */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 16px #110249; /* Shadow for card effect */
+  backdrop-filter: blur(0); /* Apply blur effect to background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #211d2ab9;
+  color: #fff;
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Apply blur effect to background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.photo {
+  border: 1px solid #491de9;
+  border-radius: 50%;
+}
+
+.photo:hover {
+  box-shadow: 0px 0px 16px #491de9;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.personal-details {
+  padding: 10px;
+}
+.personal-details h5 strong {
+  border-radius: 1px solid #ffff;
+  color: blueviolet;
+  background-color: white;
+  padding: 10px;
+}
+
+.personal-details h4 {
+  color: #5cd055;
+}
+
+.personal-details strong {
+  color: #ff00dd;
+  border-bottom: 1px solid rgba(167, 165, 165, 0.67);
+}
+
+.personal-details a {
+  color: rgb(149, 155, 223);
+}
+
+.personal-details a:hover {
+  color: #64bc5f79;
+  border-bottom: 1px solid #0cff00;
+  margin: 5px;
+}
+
+.personal-details a:active {
+  color: #0cff00;
+  border-bottom: 1px solid #64bc5f79;
+}
+
+.personal-details p {
+  border-bottom: 1px solid wheat;
+  box-shadow: 0px 0px 4px wheat;
+  padding: 10px 27px;
+  margin: auto;
+  text-indent: 10px;
+  overflow: hidden;
+}
+
+.personal-details,
+.interests,
+.languages {
+  margin: 20px;
+  padding: 20px;
+  background-color: #050015cd;
+}
+
+.main-content {
+  width: 70%;
+  padding: 0 15px;
+  margin: 0 3px;
+  background-color: rgba(57, 57, 57, 0.664);
+  backdrop-filter: blur(10px); /* Apply blur effect to background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.color {
+  color: #8462fef8;
+}
+
+.section {
+  margin-bottom: 20px;
+  color: rgb(172, 153, 229);
+}
+
+.section h1 {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.section ul li strong{
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+h3 {
+  color: #1eba16;
+  border-bottom: 2px solid #2c6229;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.experience h1 {
+  color: #adc3ac;
+}
+
+.experience h2,
+.summary h2 {
+  border-bottom: 1px solid rgb(172, 153, 229);
+}
+
+.summary h2 {
+  color: rgb(78, 86, 240);
+  border-bottom: 1px solid rgb(223, 156, 156);
+}
+
+.summary p {
+  color: rgb(136, 141, 220);
+  text-indent: 15px;
+}
+
+.education {
+  color: rgb(158, 158, 228);
+}
+
+.main-content .section p a {
+  color: #491de9;
+}
