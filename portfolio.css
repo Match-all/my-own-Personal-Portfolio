@@ -1234,3 +1234,17 @@ textarea {
     max-width: 500px;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 5%;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .navbar a {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+}
+
