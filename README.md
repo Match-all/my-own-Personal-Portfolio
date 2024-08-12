@@ -11,7 +11,7 @@ Welcome to my personal portfolio website. This project showcases my skills, expe
 - **Social Media Integration**: Links to my social media profiles are provided, allowing visitors to connect with me on platforms like LinkedIn and GitHub.
 - **Contact Form**: A fully functional contact form is available for visitors to reach out to me directly.
 
-## Sections
+## Sections.
 
 1. **Home**: Introduction to who I am and what I do, with links to social media and options to hire, contact, or download my resume.
 2. **Education**: A timeline of my educational background, detailing the key milestones in my academic journey.
