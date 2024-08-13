@@ -42,6 +42,7 @@ body {
 .photo {
   border: 1px solid #491de9;
   border-radius: 50%;
+  overflow: hidden; /* Ensures the image stays within the circular boundary */
 }
 
 .photo:hover {
@@ -50,12 +51,14 @@ body {
 
 .photo img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 50%;  /* Makes the image circular */
+  height: auto;  /* Maintains the aspect ratio */
 }
 
 .personal-details {
   padding: 10px;
 }
+
 .personal-details h5 strong {
   border-radius: 1px solid #ffff;
   color: blueviolet;
@@ -128,7 +131,8 @@ body {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-.section ul li strong{
+
+.section ul li strong {
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
 }
@@ -165,4 +169,42 @@ h3 {
 
 .main-content .section p a {
   color: #491de9;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .sidebar {
+    padding: 15px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .personal-details p {
+    padding: 5px 15px;
+  }
 }
